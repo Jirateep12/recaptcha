@@ -19,6 +19,7 @@ Javascript ใส่ในแท็ก head
 
 โค้ดฝั่ง Server (PHP)
 
+```
 <?php
 define('SecretKey', 'คีย์ฝั่ง Server');
 $query_params = [
@@ -34,3 +35,4 @@ if ($result['success']) {
 	//เพิ่มสิ่งที่จะทำเมื่อยืนยันตนผิด
 }
 ?>
+```
