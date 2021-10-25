@@ -7,7 +7,7 @@
 
 สมัครได้ที่
 
-https://www.google.com/recaptcha/admin/create || https://www.google.com/recaptcha/
+https://www.google.com/recaptcha/admin/create || https://www.google.com/recaptcha/admin/ || https://www.google.com/recaptcha/
 
 โค้ดฝั่ง client (HTML)
 
