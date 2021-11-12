@@ -12,7 +12,9 @@ https://www.google.com/recaptcha/admin/create || https://www.google.com/recaptch
 โค้ดฝั่ง client (HTML)
 
 Javascript ใส่ในแท็ก head
+```
 <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+```
 
 โค้ดกล่องให้ติ้กยืนยันวางในตำแหน่งที่ต้องการ
 ```
