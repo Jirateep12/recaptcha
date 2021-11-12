@@ -15,7 +15,9 @@ Javascript ใส่ในแท็ก head
 <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 
 โค้ดกล่องให้ติ้กยืนยันวางในตำแหน่งที่ต้องการ
+```
 <div class="g-recaptcha" data-sitekey="คีย์ฝั่ง client"></div>
+```
 
 โค้ดฝั่ง Server (PHP)
 
