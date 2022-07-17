@@ -12,18 +12,18 @@ https://www.google.com/recaptcha/admin/create || https://www.google.com/recaptch
 โค้ดฝั่ง client (HTML)
 
 Javascript ใส่ในแท็ก head
-```
+```html
 <script async defer src="https://www.google.com/recaptcha/api.js"></script>
 ```
 
 โค้ดกล่องให้ติ้กยืนยันวางในตำแหน่งที่ต้องการ
-```
+```html
 <div class="g-recaptcha" data-sitekey="คีย์ฝั่ง client"></div>
 ```
 
 โค้ดฝั่ง Server (PHP)
 
-```
+```php
 <?php
 define('SecretKey', 'คีย์ฝั่ง Server');
 $query_params = [
