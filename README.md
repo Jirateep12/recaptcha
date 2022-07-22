@@ -1,4 +1,4 @@
-# recaptcha
+# # recaptcha
 
 สิ่งที่ต้องมี
 
@@ -7,7 +7,7 @@
 
 สมัครได้ที่
 
-https://www.google.com/recaptcha/admin/create || https://www.google.com/recaptcha/admin/ || https://www.google.com/recaptcha/
+https://www.google.com/recaptcha/admin/create | https://www.google.com/recaptcha/admin/ | https://www.google.com/recaptcha/
 
 โค้ดฝั่ง client (HTML)
 
@@ -25,13 +25,13 @@ Javascript ใส่ในแท็ก head
 
 ```php
 <?php
-define('SecretKey', 'คีย์ฝั่ง Server');
-$query_params = [
-	'secret' => SecretKey,
+define('secretkey', 'คีย์ฝั่ง Server');
+$options = [
+	'secret' => secretkey,
 	'response' => filter_input(INPUT_POST, 'g-recaptcha-response'),
 	'remoteip' => $_SERVER['REMOTE_ADDR']
 ];
-$url = 'https://www.google.com/recaptcha/api/siteverify?'.http_build_query($query_params);
+$url = 'https://www.google.com/recaptcha/api/siteverify?'.http_build_query($options);
 $result = json_decode(file_get_contents($url), true);
 if ($result['success']) {
 	//เพิ่มสิ่งที่จะทำเมื่อยืนยันตนถูก
